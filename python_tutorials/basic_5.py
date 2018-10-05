@@ -55,3 +55,4 @@ plt.title('Cosine')
 
 # Show the figure.
 plt.show()
+
