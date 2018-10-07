@@ -37,5 +37,11 @@ class NearestNeighbor:
             ypred = self.y[min_index]
         return ypred
     
-    
+
+"""
+    training time O(1)
+    testing time O(n)
+"""    
+
+
         
