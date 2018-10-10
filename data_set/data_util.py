@@ -13,10 +13,10 @@ import os
 
 def load_cifar_batch(FileName):
     with open(FileName, 'rb') as f:
-        data = pickle.load(f,encoding='bytes')
+        data = pickle.load(f, encoding='bytes')
         return data
     
 
 
 x = load_cifar_batch('data_batch_1')
-print(x)
+print(type(x))
