@@ -14,9 +14,11 @@ import os
 def load_cifar_batch(FileName):
     with open(FileName, 'rb') as f:
         data = pickle.load(f, encoding='bytes')
-        return data
+        X = data[b"data"]
+        Y = np.array(data[b"labels"])
+        return X, Y
     
 
 
-x = load_cifar_batch('data_batch_1')
-print(type(x))
+x, y = load_cifar_batch('data_batch_1')
+print(y.shape)
