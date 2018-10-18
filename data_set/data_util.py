@@ -18,7 +18,4 @@ def load_cifar_batch(FileName):
         Y = np.array(data[b"labels"])
         return X, Y
     
-
-
-x, y = load_cifar_batch('data_batch_1')
-print(y.shape)
+#use file name for importing data
