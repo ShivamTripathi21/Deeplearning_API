@@ -13,9 +13,10 @@ import os
 
 def load_cifar_batch(FileName):
     with open(FileName, 'rb') as f:
+        f = f = os.path.join(ROOT, 'FileName' % (b, ))
         data = pickle.load(f, encoding='bytes')
         X = data[b"data"]
         Y = np.array(data[b"labels"])
         return X, Y
     
-#use file name for importing data
+#use file name for import

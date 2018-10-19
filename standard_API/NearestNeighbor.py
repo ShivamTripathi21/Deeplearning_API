@@ -13,6 +13,7 @@ we r gonna use cifr-10 data set for classification
 """
 
 import numpy as np
+from Desktop.DL_API.data_set.data_util import *
 
 class NearestNeighbor:
     def __init__(self):
@@ -42,6 +43,11 @@ class NearestNeighbor:
     training time O(1)
     testing time O(n)
 """    
+
+"""checking data accessiblity"""
+
+x, y = load_cifar_batch("data_batch_1")
+print(x.shape)
 
 
         
